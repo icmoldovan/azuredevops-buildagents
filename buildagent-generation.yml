@@ -80,6 +80,7 @@ jobs:
       targetType: 'inline'
       script: |
         Get-Content -Path (Join-Path "$(TemplateDirectoryPath)" "$(setVars.ImageReadmeName)")
+    enabled: false
 
   - task: PowerShell@2
     displayName: 'Print provisioners duration'
